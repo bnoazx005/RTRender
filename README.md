@@ -1,19 +1,23 @@
-Title:            RTRender
-Author:       Kasimov Ildar
-Version:       1.0
+**Title**:        RTRender
 
-Remark:	
+**Author**:       Kasimov Ildar
+
+**e-mail**:       ildar2571@yandex.ru
+
+**Version**:      1.0
+
+**Remark**:	
 
 Some files of the project contained code's parts which were taken from other sources. If file includes
 code from other source then it contains mark about this situation.
 
-Description:
+**Description**:
 
 RTRender is my educational project, which was developed as part of course work. Main feature
 of it is a support of parallelism. The engine provides using of MPI, OpenMP. It also can use sequential mode of
 work. It includes a  BVH tree as an acceleration structure.
 
-Getting started: 
+**Getting started**: 
        
 This project was developed with using of Microsoft Visual Studio 2013 Community. 
 If you use this version of Visual Studio you just should build sources. The result of building will be an execut-
@@ -28,13 +32,13 @@ should create and edit configuration file of the program. This file must be name
 scene's dscription has no pre defined name. You can name it as you wish. Information about syntax of
 scene's defenition is contained in 'files descriptions' chapter.
 
-Supported platforms: 
+**Supported platforms**: 
 
 Main platform of project at the moment is Microsoft Windows OS.  But most of the code is crossplatform.
 MPI implementation is the main part, which depends on specific OS. Therefore you just should rewrite 
 the code which uses Microsoft MPI SDK. MPICH will be the best library for UNIX systems.
 
-Files description:
+**Files description**:
 
 For starting of a process of visualization the program needs two configuration files, which describe current
 settings of a work. The first file 'config.xml' is a configuration file of the program. The second file has 
@@ -43,6 +47,7 @@ an arbitrary name and describes a scene.
 The file config.xml is required file of the program. If the file contains  any error, the program will report
 about it. A template of configuration file is placed below:
 
+```xml
 <?xml version="1.0" ?>
 
 <config>
@@ -56,64 +61,61 @@ about it. A template of configuration file is placed below:
     </scene>
 
 </config>
+```
 
 =========================================================================================
 
-Main section of the file is <config>, other subsections should be contained inside it.
+Main section of the file is `<config>`, other subsections should be contained inside it.
 
-The section <render> contains information about tracer settings. It should contain required attributes:
+The section `<render>` contains information about tracer settings. It should contain required attributes:
 type, scheme, max_depth.
 
-                type = { OMP, MPI, Sequential }  -  a type of ray tracer.
+                 Attribute name | Valid values                     | Description 
+                ------------------ | ------------------------   | --------------
+                 type                      | OMP, MPI, Sequential | A type of ray tracer                 
+                 scheme                | UINT                                | An index of scheme. For precompiled program the scheme index can be equals 1 or 2.                 
+                 max_depth         | UINT                                | Mmaximal depth of recursion in ray tracing process. Too big values can freeze a run of program. 
                 
-                scheme = {1, 2, ..., n} - an index of scheme. For precompiled program the scheme index can be equals
-                1 or 2.
-                
-                max_depth = {1, ... , n} - maximal depth of recursion in ray tracing process. Too big values can freeze
-                a run of program.
-                
-The section <camera> contains information about camera. Required attributes: type, pos, target, width, height. 
+The section `<camera>` contains information about camera. Required attributes: type, pos, target, width, height. 
 There are additional attributes for the section.
 
-               type = { perspective } - camera's type. The program uses only perspective type of camera.
+                 Attribute name                                         | Valid values            | Description 
+                ------------------------------------------ | -------------------- | --------------
+               type                                                                |  perspective            | Camera's type. The program uses only perspective type of camera.               
+               pos                                                                  | "float; float; float" | Position of camera in a space.               
+               target                                                             | "float; float; float" | Sets point of interests for camera.               
+               width                                                             | UINT                       | Width of an image.               
+               height                                                            | UINT                       | Height of  an image.               
+               (additional for perspective camera) fov | float                         | Angle of camera's view. It's used only for a perspective type of camera.
                
-               pos = "value; value; value" - position of camera in a space.
-               
-               target = "value; value; value" - sets point of interests for camera.
-               
-               width = {1, ... , n} - width of an image.
-               
-               height = {1, ... , n} - height of  an image.
-               
-               (additional for perspective camera) fov = (0 .. 90) - angle of camera's view. It's used only for a perspective
-               type of camera.
-               
-The section <result> contains information about result image. Main attributes: type, path, name.
+The section `<result>` contains information about result image. Main attributes: type, path, name.
 
-              type = {tga, ppm} - sets type of result image.
+                 Attribute name | Valid values | Description 
+                ------------------ | ------------ | --------------
+              type                         | tga, ppm     | Sets type of result image.              
+              path                        | string          | Sets destination path for image.              
+              name                      | string          | Sets name of result image.
               
-              path = "string_value" - sets destination path for image.
-              
-              name = "string_value" - sets name of result image.
-              
-The section <scene> describes settings of  the scene. Required attributes: path, bg_color. Information about
+The section `<scene>` describes settings of  the scene. Required attributes: path, bg_color. Information about
 BVH tree is required to describe this section.
     
-             path  = "string_value" - path to the file with scene's defenition. The path should contain path + scene's
-             file name. For instance: C:\Builds\OpenMP\scene1.xml.
+             Attribute name | Valid values            | Description 
+             ------------------ | ------------             | --------------
+             path                     | string                       | Path to the file with scene's defenition. The path should contain path + scene's file name. For instance: C:\Builds\OpenMP\scene1.xml.             
+             bg_color             | "float; float; float" | Sets background color.
              
-             bg_color = "value; value; value" - sets background color.
-             
-             The section <bvh> contains information about BVH tree. Required attributes:use, max_depth.
-             
-                          use = {true, false} - sets using of the BVH structure. If it's false, then the structure is not used.
+             The section `<bvh>` contains information about BVH tree. Required attributes:use, max_depth.
                           
-                          max_depth = {0, ... , n} - a maximal depth of the constructed tree.
+                          Attribute name | Valid values  | Description 
+                            ------------------ | ------------ | --------------
+                          use                           | true, false   | Sets using of the BVH structure. If it's false, then the structure is not used.                          
+                          max_depth            | UINT          | A maximal depth of the constructed tree.
                           
 ============================================================================================
 
 Example of scene's definition file is submitted below:
 
+```xml
 <?xml version="1.0" ?>
 
 <scene>
@@ -135,53 +137,53 @@ Example of scene's definition file is submitted below:
      <primitive type = "sphere" center = "60.0;10.0;100.0" radius = "20.0" material = "std_transp" color = "1.0;1.0;1.0"/>
   </primitives>
 </scene>            
+```
 
-Main section is <scene>, rest of it should be contained inside it.
+Main section is `<scene>`, rest of it should be contained inside it.
 
-The section <materials> contains information about used materials. This section MUST be the first in
-definition file and contain all materials, which are used by primitives. There is subsection <material> 
+The section `<materials>` contains information about used materials. This section MUST be the first in
+definition file and contain all materials, which are used by primitives. There is subsection `<material>` 
 describes a material. Required attributes: name, kd, kr, ks, kt, refract_coeff.
+       
+                 Attribute name | Valid values     | Description 
+                ------------------ | ------------       | --------------       
+              name                       | string               | Name of material.              
+              kd                             | float in [0 .. 1] | Diffuse coefficient.              
+              kr                             |float in  [0 .. 1]  | Reflection coefficient.              
+              ks                             | float in [0 .. 1]  | Specular coefficient.              
+              kt                             |float in  [0 .. 1]  | Transparency coefficient.              
+              refract_coeff         | float in [1 .. n]  | Refraction coefficient. 
               
-              name = "string_value" - name of material.
+The section `<lights>` contains set of `<light>` elements, which describes light sources in scene. 
+Required attributes `<light>` : type, pos, color. Also it contains additional attributes.
+
+                 Attribute name | Valid values           | Description 
+                ------------------ | ------------             | --------------            
+              type                         | point                       | Light's type.              
+              pos                           | "float; float; float"| Position of light source in a space.              
+              color                       | "float; float; float" | Light's color.
               
-              kd = [0 .. 1] - diffuse coefficient.
-              
-              kr  = [0 .. 1] - reflection coefficient.
-              
-              ks = [0 .. 1] - specular coefficient.
-              
-              kt = [0 .. 1] - transparency coefficient.
-              
-              refract_coeff = [1 .. n] - refraction coefficient. 
-              
-The section <lights> contains set of <light> elements, which describes light sources in scene. 
-Required attributes <light> : type, pos, color. Also it contains additional attributes.
-            
-              type = {point} - light's type.
-              
-              pos = "value; value; value" - position of light source in a space.
-              
-              color = "value; value; value" - light color.
-              
-The section <primitives> contains set of <primitive> elements, which sets primitives in scene.
-Required attributes <primitive>: type, material, color. There are additional attributes, which
+The section `<primitives>` contains set of `<primitive>` elements, which sets primitives in scene.
+Required attributes `<primitive>`: type, material, color. There are additional attributes, which
 are depend on type of primitive.
- 
-               type = {sphere, mesh, triangle} - primitive's type.
-               
-               material = "material name" - name of the material. The material, which name is used in 
-               definition, SHOULD be predefined in the <materials> section.  
-               
-               color = "value; value; value" - color of primitive.
+
+                 Attribute name | Valid values                    | Description 
+                ------------------ | ------------                      | -------------- 
+               type                        | sphere, mesh, triangle | primitive's type.               
+               material                | string                               | Name of the material. The material, which name is used in definition, SHOULD be predefined in the `<materials>` section.                 
+               color                      | "float; float; float"         | Color of primitive.
                
                Additional sphere's attributes: radius, center.
                
-               radius = (0, n) - radius of sphere.
-               
-               center = "value; value; value" - position of sphere's center.
-               
+               Attribute name | Valid values            | Description 
+                ----------------- | ------------              | -------------- 
+               radius                   | float in (0, n)         | Radius of sphere.               
+               center                  | "float; float; float" | Position of sphere's center.
+                              
                For triangle mesh (mesh) attribute path is defined.  It contains path to the OBJ file of mesh.
                
                Triangle is described by three attributes: p0, p1, p2.
                
-               p0, p1, p2 = "value; value; value" - coordinates of triangle points in a space.  
+                Attribute name | Valid values             | Description 
+                ------------------ | ------------              | -------------- 
+               p0, p1, p2               | "float; float; float" | Coordinates of triangle points in a space.  
