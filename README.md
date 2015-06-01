@@ -6,7 +6,7 @@
 
 **Version**:      1.0
 
-**Remark**:	
+**Remark**: 
 
 Some files of the project contained code's parts which were taken from other sources. If file includes
 code from other source then it contains mark about this situation.
@@ -104,7 +104,7 @@ BVH tree is required to describe this section.
              path                     | string                       | Path to the file with scene's defenition. The path should contain path + scene's file name. For instance: C:\Builds\OpenMP\scene1.xml.             
              bg_color             | "float; float; float" | Sets background color.
              
-             The section `<bvh>` contains information about BVH tree. Required attributes:use, max_depth.
+The section `<bvh>` contains information about BVH tree. Required attributes:use, max_depth.
                           
                           Attribute name | Valid values  | Description 
                             ------------------ | ------------ | --------------
@@ -127,8 +127,8 @@ Example of scene's definition file is submitted below:
   </materials>
   
   <lights>
-  	<light type = "point" pos = "60.0;150.0;60.0" color="1.0;1.0;1.0"/>
-  </lights>	
+    <light type = "point" pos = "60.0;150.0;60.0" color="1.0;1.0;1.0"/>
+  </lights> 
   
   <primitives>                                                                                                         
      <primitive type = "mesh" path = ".\..\Models\floor.obj" material = "mirror" color = "0.7;0.0;0.0"/>
@@ -173,17 +173,17 @@ are depend on type of primitive.
                material                | string                               | Name of the material. The material, which name is used in definition, SHOULD be predefined in the `<materials>` section.                 
                color                      | "float; float; float"         | Color of primitive.
                
-               Additional sphere's attributes: radius, center.
+Additional sphere's attributes: radius, center.
                
                Attribute name | Valid values            | Description 
                 ----------------- | ------------              | -------------- 
                radius                   | float in (0, n)         | Radius of sphere.               
                center                  | "float; float; float" | Position of sphere's center.
                               
-               For triangle mesh (mesh) attribute path is defined.  It contains path to the OBJ file of mesh.
+A triangle mesh contains an attribute, which describes path to the OBJ file of mesh.
                
-               Triangle is described by three attributes: p0, p1, p2.
+Triangle is described by three attributes: p0, p1, p2.
                
                 Attribute name | Valid values             | Description 
                 ------------------ | ------------              | -------------- 
-               p0, p1, p2               | "float; float; float" | Coordinates of triangle points in a space.  
+               p0, p1, p2               | "float; float; float" | Coordinates of triangle's points in a space.  
