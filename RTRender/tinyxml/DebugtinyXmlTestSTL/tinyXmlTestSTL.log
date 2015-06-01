@@ -1,0 +1,24 @@
+﻿Сборка начата 18.05.2015 10:49:13.
+     1>Проект "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyXmlTestSTL.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Visual Leak Detector\include" /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D TIXML_USE_STL /D TUNE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\\" /Fd"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\vc100.pdb" /FR"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\\" /Gd /TP /analyze- /errorReport:prompt xmltest.cpp
+         xmltest.cpp
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.lib" /MACHINE:X86 "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\xmltest.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.lib"
+     1>xmltest.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/INCREMENTAL:NO"
+         tinyXmlTestSTL.vcxproj -> C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.exe;#1" /manifest "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.exe.intermediate.manifest"
+       BscMake:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.bsc" "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\xmltest.sbr"
+       FinalizeBuildStatus:
+         Файл "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.unsuccessfulbuild" удаляется.
+         Обращение к "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyXmlTestSTL\tinyXmlTestSTL.lastbuildstate".
+     1>Построение проекта "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyXmlTestSTL.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:07.31

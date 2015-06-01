@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<config>
+
+    <render type = "Sequential" scheme="1" max_depth  = "4" />
+    <camera type = "perspective" pos = "0.0;0.0;-1.0" target = "0.0;0.0;0.0" fov = "45.0" width="640" height="480" />
+    <result type = "tga" path="." name = "result" />
+
+    <scene path = ".\..\Scenes\scene_1.xml" bg_color = "0.0;0.0;0.5">
+        <bvh use = "true" max_depth = "64" />
+    </scene>
+
+</config>
