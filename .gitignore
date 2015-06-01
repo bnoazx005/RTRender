@@ -1,0 +1,7 @@
+*.opensdf
+Debug/
+RTRender/Debug/
+*.ppm
+*.obj
+TODO
+Docs/

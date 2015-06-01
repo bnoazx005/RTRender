@@ -1,0 +1,2 @@
+If you have not  installed Microsoft MPI you should copy msmpi.dll into a folder with executable file of program.
+The program uses static linking, therefor it should has the dynamic library. 

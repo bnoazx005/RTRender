@@ -1,0 +1,27 @@
+﻿Сборка начата 18.05.2015 10:49:05.
+     1>Проект "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyxmlSTL.vcxproj" в узле 3 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Visual Leak Detector\include" /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D TIXML_USE_STL /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\\" /Fd"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\vc100.pdb" /FR"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\\" /Gd /TP /analyze- /errorReport:prompt tinystr.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp
+         tinyxmlparser.cpp
+         tinyxmlerror.cpp
+         tinyxml.cpp
+         tinystr.cpp
+         Создание кода...
+       Lib:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.lib" /LIBPATH:"C:\Program Files\Visual Leak Detector\lib\Win32" /NOLOGO "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinystr.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxml.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlerror.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlparser.obj"
+         tinyxmlSTL.vcxproj -> C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.lib
+       BscMake:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.bsc" "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinystr.sbr" "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxml.sbr" "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlerror.sbr" "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlparser.sbr"
+       FinalizeBuildStatus:
+         Файл "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.unsuccessfulbuild" удаляется.
+         Обращение к "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\DebugtinyxmlSTL\tinyxmlSTL.lastbuildstate".
+     1>Построение проекта "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyxmlSTL.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:07.97

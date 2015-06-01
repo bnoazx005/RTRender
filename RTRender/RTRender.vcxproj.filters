@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{6a404341-c840-4470-a127-6719ca43205e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{8136b673-393f-401f-b46f-1eaa4c0d2010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\impls">
+      <UniqueIdentifier>{aae93d28-4908-4f7b-97d8-3df5bc351526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\interfaces">
+      <UniqueIdentifier>{9cfd4f63-4845-474b-bd93-c6b39c592c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\interfaces">
+      <UniqueIdentifier>{58bc6194-5a6d-4dbb-b599-8099a80690f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\impls">
+      <UniqueIdentifier>{5ebf5742-8b2d-42e1-b8ff-a400fb0fcafc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\impls\RTMath.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTPointLight.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTColor.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTBoundingBox.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\interfaces\RTSceneObject.cpp">
+      <Filter>source\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTOBJLoader.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\interfaces\RTModelLoader.cpp">
+      <Filter>source\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTTransform.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTTriangle.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTSphere.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTPlane.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTMesh.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTInstance.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTFrameBuffer.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTPerspectiveCamera.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\interfaces\RTCamera.cpp">
+      <Filter>source\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTRayTracer.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTBVHTree.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTScene.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTLog.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTMPIRayTracer.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTApplication.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTConfig.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTOMPRayTracer.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\interfaces\RTImage.cpp">
+      <Filter>source\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTTGAImage.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+    <ClCompile Include="source\impls\RTPPMImage.cpp">
+      <Filter>source\impls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\RTRender.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTMath.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTImage.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTSceneObject.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTColor.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTLight.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTPointLight.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTMaterial.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RTTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTBoundingBox.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTModelLoader.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTOBJLoader.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTTransform.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTTriangle.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTSphere.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTPlane.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTMesh.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTInstance.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTTracer.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTFrameBuffer.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\RTCamera.h">
+      <Filter>include\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTPerspectiveCamera.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTScene.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTRayTracer.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTBVHTree.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTLog.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTMPIRayTracer.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTOMPRayTracer.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTApplication.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTConfig.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTTGAImage.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+    <ClInclude Include="include\impls\RTPPMImage.h">
+      <Filter>include\impls</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

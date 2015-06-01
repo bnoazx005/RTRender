@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<scene>
+  <materials>
+    <material name = "std_diffuse" kd = "1.0" kr = "0.0" ks = "0.8" kt = "0.0" refract_coeff = "0.0" />    
+    <material name = "std_transp" kd = "1.0" kr = "0.0" ks = "0.7" kt = "1.0" refract_coeff = "2.0" />
+    <material name = "std_refl" kd = "1.0" kr = "0.4" ks = "0.9" kt = "0.0" refract_coeff = "0.0" />
+    <material name = "mirror" kd = "1.0" kr = "0.8" ks = "0.9" kt = "0.0" refract_coeff = "0.0" />
+  </materials>
+  
+  <lights>
+  	<light type = "point" pos = "60.0;150.0;60.0" color="1.0;1.0;1.0"/>
+  </lights>	
+  
+  <primitives>                                                                                                         
+     <primitive type = "mesh" path = ".\..\Models\floor.obj" material = "mirror" color = "0.7;0.0;0.0"/>
+     <primitive type = "mesh" path = ".\..\Models\bunny.obj" material = "std_refl" color = "1.0;0.8;0.0"/>
+     <primitive type = "mesh" path = ".\..\Models\mirror.obj" material = "mirror" color = "1.0;1.0;1.0"/>
+     <primitive type = "sphere" center = "60.0;10.0;100.0" radius = "20.0" material = "std_transp" color = "1.0;1.0;1.0"/>
+  </primitives>
+</scene>

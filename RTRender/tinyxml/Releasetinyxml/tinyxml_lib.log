@@ -1,0 +1,25 @@
+﻿Сборка начата 23.05.2015 20:35:23.
+     1>Проект "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyxml_lib.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _LIB /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\\" /Fd"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt tinystr.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp
+         tinystr.cpp
+         tinyxml.cpp
+         tinyxmlerror.cpp
+         tinyxmlparser.cpp
+         Создание кода...
+       Lib:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.lib" /LIBPATH:"C:\Program Files\Visual Leak Detector\lib\Win32" /NOLOGO "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinystr.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxmlerror.obj"
+         "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxmlparser.obj"
+         tinyxml_lib.vcxproj -> C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.lib
+       FinalizeBuildStatus:
+         Файл "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.unsuccessfulbuild" удаляется.
+         Обращение к "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\Releasetinyxml\tinyxml.lastbuildstate".
+     1>Построение проекта "C:\Users\Ильдар\Documents\Visual Studio 2013\Projects\RTRender\RTRender\tinyxml\tinyxml_lib.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:04.31
