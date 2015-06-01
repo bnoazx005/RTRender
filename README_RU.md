@@ -1,6 +1,9 @@
 **Название**:            RTRender
+
 **Автор**:                   Kasimov Ildar
+
 **e-mail**:                   ildar2571@yandex.ru 
+
 **Версия**:                 1.0
 
 **Замечание**:	
