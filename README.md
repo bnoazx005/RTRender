@@ -179,7 +179,7 @@ Additional sphere's attributes: radius, center.
                 ----------------- | ------------              | -------------- 
                radius                   | float in (0, n)         | Radius of sphere.               
                center                  | "float; float; float" | Position of sphere's center.
-                              
+
 A triangle mesh contains an attribute, which describes path to the OBJ file of mesh.
                
 Triangle is described by three attributes: p0, p1, p2.
